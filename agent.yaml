@@ -1,0 +1,30 @@
+spec_version: "0.1.0"
+name: salesforce-apex-governor-agent
+version: 1.0.0
+description: Salesforce apex soql query loop detection, dml statement batching, and governor limit compliance.
+author: "Rucha Salpure"
+license: MIT
+model:
+  preferred: claude-opus-4-6
+  fallback:
+    - claude-sonnet-4-5-20250929
+  constraints:
+    temperature: 0.2
+    max_tokens: 4096
+skills:
+  - bulk-trigger-optimization
+tools: []
+delegation:
+  mode: auto
+runtime:
+  max_turns: 50
+  timeout: 300
+compliance:
+  risk_tier: standard
+  frameworks: []
+tags:
+  - developer-tools
+  - autonomous-agent
+  - opengap-verified
+metadata:
+  repository: "https://github.com/Rucha0901/salesforce-apex-governor-agent"
